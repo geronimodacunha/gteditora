@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&family=Playfair+Display:wght@400;500;600;800&display=swap');
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color--red: rgba(255, 0, 0, 0.685);
+}
+
+header{
+height: 50px;
+z-index: 999;
+position: fixed;
+top: 0;
+width: 100%;
+color: wheat;
+}
+nav {
+font-family: 'Playfair Display', serif;
+line-height: 0px;
+float: right;
+margin-right: 15px;
+}
+
+a{
+margin-right:10px;
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.info_we{
+border: 2px solid black;
+padding: 07px;
+background-color: var(--color--red);
+color: white;
+}
+
+.img_fundo{
+    z-index: 1;
+    background-image: url(img/logo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 645px;  
+}
+
+.color_img{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   
+}
+
+.conteudo_info{
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+
+}
+hr{
+    display: none;
+}
+
+.button_info{
+    border: 1px solid white;
+    padding: 5px;
+   width: 200px;
+    color: white;
+    background-color: var(--color--red);
+    border-radius: 10px;
+    transition: transform 0.68s;
+}
+a:not(.info_we):hover{
+   color: var(--color--red);
+}
+.button_info:hover{
+    transform: scale(1.1);
+    
+}
+
+#menu{
+    z-index: 1000;
+    font-size: 2rem;color: white; 
+    position: absolute;
+     top: 20px;
+      left: 10px;
+      display: none;
+}
+
+.info_serverce{
+    display: flex;
+    background-color: #ce0002;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    z-index: 5;
+}
+
+.img_info{
+    z-index: 3;
+    margin-right: 40px;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .info_serverce{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    header{
+        display: none;
+        background-color: black;
+        height: 100%;
+        width: 200px;
+
+    }
+    #menu{
+        font-size: 2rem;
+        color: white; 
+    position: fixed;
+     top: 20px;
+      left: 10px;
+          display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        text-align: center;
+        margin-right: 30px;
+    }
+    a:not(.info_we){
+        margin-top: 40px;
+    }
+    hr{
+        color: white;
+        width: 100px;
+    }
+    .info_we{
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 10px;
+    }
+}
