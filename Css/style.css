@@ -117,8 +117,8 @@ a:not(.info_we):hover{
 
 .img_info{
     z-index: 33;
-    margin-right: 40px;
     color: white;
+    
 }
 
 
@@ -184,3 +184,5 @@ a:not(.info_we):hover{
         line-height: 10px;
     }
 }
+
+/*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*/
